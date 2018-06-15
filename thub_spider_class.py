@@ -33,7 +33,7 @@ print('download filename: {}'.format(download_file_size))
 print('save filename: {}'.format(save_file))
 
 # 线程数
-thread_num = 1
+thread_num = 3
 # 信号量, 同时只允许3个线程
 threading.BoundedSemaphore(thread_num)
 
