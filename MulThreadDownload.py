@@ -26,7 +26,7 @@ class MulThreadDownload(threading.Thread):
         self.fd.seek(self.startpos)
         self.fd.write(response.content)
 
-        # print('stop thread: {} at {}'.format(self.getName(), time.time()))
+        print('stop thread: {} at {}'.format(self.getName(), time.time()))
 
     def run(self):
         self.download()
